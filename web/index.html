@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Database Management</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Управління Таблицями Бази Даних</h1>
+
+        <h2>Створення таблиці</h2>
+        <input type="text" id="tableName" placeholder="Назва таблиці">
+        <button id="createTableBtn">Створити таблицю</button>
+
+        <h2>Додавання рядка</h2>
+        <input type="text" id="rowName" placeholder="Ім'я">
+        <button id="addRowBtn">Додати рядок</button>
+
+        <h2>Отримання всіх рядків</h2>
+        <button id="getAllRowsBtn">Показати всі рядки</button>
+        <div id="rowsContainer"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@improbable-eng/grpc-web@0.15.0/dist/grpc-web-client.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
